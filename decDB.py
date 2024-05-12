@@ -128,7 +128,7 @@ encDB = read_encrypted_data_from_file(input_filename)
 
 decDB = decrypt_database(key, iv, encDB)
 
-output_filename = 'output_filename'ee
+output_filename = 'output_filename'
 save_to_file(decDB, output_filename)
 print("Decrypted data saved to ", output_filename)
 
