@@ -115,7 +115,7 @@ modelName = "hdd_model"
 serialNumber = "hdd_serial"
 
 pragma = generate_pragma(uuid, modelName, serialNumber)
-print("Generated Pragma: ", pragma.hex())
+print("Generated Pragma: ", pragma)
 
 # reg : HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\{c4def0e5-d3ee-4e8a-adf9-df1ba48a4f5a}
 userId = "c4def0e5-d3ee-4e8a-adf9-df1ba48a4f5a"
