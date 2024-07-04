@@ -1,2 +1,4 @@
 *.edb
 *.db
+ output*
+ chatLogs*
