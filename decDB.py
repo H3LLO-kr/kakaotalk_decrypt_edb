@@ -109,7 +109,7 @@ def save_to_file(decDB, output_filename):
 # ----------------------------------------------------------------------
 # full example usage:
 # key = 'hardcoded byte array' in the generate_pragma function
-# reg : HKEY_CURRENT_USER\Software\Kakao\KakaoTalk\DeviceInfo\20230613-224538-107
+# reg : HKEY_CURRENT_USER\Software\Kakao\KakaoTalk\DeviceInfo\...
 uuid = "sys_uuid"
 modelName = "hdd_model"
 serialNumber = "hdd_serial"
@@ -117,8 +117,7 @@ serialNumber = "hdd_serial"
 pragma = generate_pragma(uuid, modelName, serialNumber)
 print("Generated Pragma: ", pragma)
 
-# reg : HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\Interfaces\{c4def0e5-d3ee-4e8a-adf9-df1ba48a4f5a}
-userId = "c4def0e5-d3ee-4e8a-adf9-df1ba48a4f5a"
+userId = "userID"
 key, iv = generate_key_and_iv(pragma, userId)
 print("Generated Key: ", key.hex())
 print("Generated IV: ", iv.hex())
